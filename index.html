@@ -6,113 +6,116 @@
     <title>Contador TCG Genshin Impact</title>
 	<style>
 	.linha120 {
-        background-color: #f08080;
+        	background-color: #f08080;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linha100 {
-        margin: 10px;
-        background-color: #ffa07a;
+        	margin: 10px;
+        	background-color: #ffa07a;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linha80 {
-        margin: 10px;
-        background-color: #ffdead;
+        	margin: 10px;
+        	background-color: #ffdead;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linha60 {
-        margin: 10px;
-        background-color: #eee8aa;
+        	margin: 10px;
+        	background-color: #eee8aa;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 
 	.linha50 {
-        margin: 10px;
-        background-color: #ffffff;
+	        margin: 10px;
+	        background-color: #ffffff;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 		
 	.linha30 {
-        margin: 10px;
-        background-color: #ffffff;
+	        margin: 10px;
+	        background-color: #ffffff;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 		
 	.linha20 {
-        margin: 10px;
-        background-color: #98fb98;
+	        margin: 10px;
+	        background-color: #98fb98;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 		
 	.linha10 {
-        margin: 10px;
-        background-color: #ffffff;
+	        margin: 10px;
+	        background-color: #ffffff;
 		text-align: center;
 		float: left;
 		margin: 2%;
 		width: 95%;
 		height: 10%;
-    }
+	}
 	.linhas {
-        margin: 5px;
-        background-color: #000000;
+	        margin: 5px;
+	        background-color: #000000;
 		text-align: center;
 		float: left;
 		width: 60%;
-    }
+	}
 	.final {
-        margin: 10px;
-        background-color: #ffffff;
+	        margin: 10px;
+	        background-color: #ffffff;
 		text-align: center;
 		float: right;
 		width: 30%;
 	}
-    .imagem {
-        margin: 5px;
-        cursor: pointer;
-        width: 100px;
-        height: 100px;
-    }
+	.imagem {
+	        margin: 5px;
+	        cursor: pointer;
+	        width: 100px;
+	        height: 100px;
+	}
 	.cartas {
-        margin: 5px;
-        cursor: pointer;
-        width: 7%;
-        height: 7%;
-    }
+	        margin: 5px;
+	        cursor: pointer;
+	        width: 7%;
+	        height: 7%;
+	}
 	.selecionar {
-        margin: 5px;
-        cursor: pointer;
-        width: 105px;
-        height: 180px;
-    }
+	        margin: 5px;
+	        cursor: pointer;
+	        width: 105px;
+	        height: 180px;
+	}
 	.ativos {
+		cursor: pointer;
+	}
+	.ativos2 {
 		cursor: pointer;
 	}
 	h1 {
@@ -345,15 +348,15 @@
 	
 	<div class="final2">
 	<p>
-		<span id="card1" class="ativos2"></br></span> </br>
-		<span id="card2" class="ativos2"></br></span> </br>
-		<span id="card3" class="ativos2"></br></span> </br>
-		<span id="card4" class="ativos2"></br></span> </br>
-		<span id="card5" class="ativos2"></br></span> </br>
-		<span id="card6" class="ativos2"></br></span> </br>
-		<span id="card7" class="ativos2"></br></span> </br>
-		<span id="card8" class="ativos2"></br></span> </br>
-		<span id="card9" class="ativos2"></br></span> </br>
+		<span id="card01" class="ativos2"></br></span> </br>
+		<span id="card02" class="ativos2"></br></span> </br>
+		<span id="card03" class="ativos2"></br></span> </br>
+		<span id="card04" class="ativos2"></br></span> </br>
+		<span id="card05" class="ativos2"></br></span> </br>
+		<span id="card06" class="ativos2"></br></span> </br>
+		<span id="card07" class="ativos2"></br></span> </br>
+		<span id="card08" class="ativos2"></br></span> </br>
+		<span id="card09" class="ativos2"></br></span> </br>
 		<span id="card10" class="ativos2"></br></span> </br>
 		<span id="card11" class="ativos2"></br></span> </br>
 		<span id="card12" class="ativos2"></br></span> </br>
@@ -379,8 +382,8 @@
 	
 	</div>
 
-    <script>
-	    // Função para lidar com as imagens da categoria 20
+       <script>
+	// Função para lidar com as imagens da categoria 20
     function handleCategoria(imagem) {
 		// Coleta a categoria da div pai da imagem clicada
 		var categoria = imagem.parentElement.dataset.categoria;
@@ -390,6 +393,7 @@
 			// A imagem já foi adicionada a um ativo, não faça nada
 			return;
 		}
+		
         // Crie uma cópia da imagem clicada
         var imagemClicada = document.createElement("img");
         imagemClicada.src = "./originais/c" + imagem.alt + ".png";
@@ -429,16 +433,323 @@
 		
     }
 	
+	// Função para lidar com as imagens da nova categoria
+	function handleCardsCategoria(cartas) {
+		// Coleta a categoria da div pai da carta clicada
+		var categoriaCarta = cartas.parentElement.dataset.categoria;
+		
+		//Verica a quantidade de cartas no deck
+		if (contadordeck == 30) {
+			//limite de cartas no deck atingido, não faça nada
+			return;
+		}
+		
+		// Verifique se a carta já foi adicionada a algum card
+		if (cartasAdicionadas.includes(cartas.alt)) {
+			// A carta já foi adicionada 2x a um card, não faça nada
+			return;
+		}
+
+		// Crie uma cópia da card clicada
+		var cartaClicada = document.createElement("img");
+		cartaClicada.src = cartas.src;
+		cartaClicada.alt = cartas.alt;
+		cartaClicada.width = 105; // Defina o tamanho da imagem replicada
+		cartaClicada.height = 20;
+
+		// Verifique qual slot de card está vazio e insira a card clicada nele
+		if (card01 == 0) {
+			card01name.textContent = cartas.alt;
+			card01name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card01name.appendChild(cartaClicada);
+			card01 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard01 = categoriaCarta;
+		} else if (card02 == 0) {
+			card02name.textContent = cartas.alt;
+			card02name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card02name.appendChild(cartaClicada);
+			card02 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard02 = categoriaCarta;
+		} else if (card03 == 0) {
+			card03name.textContent = cartas.alt;
+			card03name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card03name.appendChild(cartaClicada);
+			card03 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard03 = categoriaCarta;
+		} else if (card04 == 0) {
+			card04name.textContent = cartas.alt;
+			card04name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card04name.appendChild(cartaClicada);
+			card04 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard04 = categoriaCarta;
+		} else if (card05 == 0) {
+			card05name.textContent = cartas.alt;
+			card05name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card05name.appendChild(cartaClicada);
+			card05 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard05 = categoriaCarta;
+		} else if (card06 == 0) {
+			card06name.textContent = cartas.alt;
+			card06name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card06name.appendChild(cartaClicada);
+			card06 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard06 = categoriaCarta;
+		} else if (card07 == 0) {
+			card07name.textContent = cartas.alt;
+			card07name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card07name.appendChild(cartaClicada);
+			card07 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard07 = categoriaCarta;
+		} else if (card08 == 0) {
+			card08name.textContent = cartas.alt;
+			card08name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card08name.appendChild(cartaClicada);
+			card08 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard08 = categoriaCarta;
+		} else if (card09 == 0) {
+			card09name.textContent = cartas.alt;
+			card09name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card09name.appendChild(cartaClicada);
+			card09 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard09 = categoriaCarta;
+		} else if (card10 == 0) {
+			card10name.textContent = cartas.alt;
+			card10name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card10name.appendChild(cartaClicada);
+			card10 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard10 = categoriaCarta;
+		} else if (card11 == 0) {
+			card11name.textContent = cartas.alt;
+			card11name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card11name.appendChild(cartaClicada);
+			card11 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard11 = categoriaCarta;
+		} else if (card12 == 0) {
+			card12name.textContent = cartas.alt;
+			card12name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card12name.appendChild(cartaClicada);
+			card12 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard12 = categoriaCarta;
+		} else if (card13 == 0) {
+			card13name.textContent = cartas.alt;
+			card13name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card13name.appendChild(cartaClicada);
+			card13 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard13 = categoriaCarta;
+		} else if (card14 == 0) {
+			card14name.textContent = cartas.alt;
+			card14name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card14name.appendChild(cartaClicada);
+			card14 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard14 = categoriaCarta;
+		} else if (card15 == 0) {
+			card15name.textContent = cartas.alt;
+			card15name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card15name.appendChild(cartaClicada);
+			card15 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard15 = categoriaCarta;
+		} else if (card16 == 0) {
+			card16name.textContent = cartas.alt;
+			card16name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card16name.appendChild(cartaClicada);
+			card16 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard16 = categoriaCarta;
+		} else if (card17 == 0) {
+			card17name.textContent = cartas.alt;
+			card17name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card17name.appendChild(cartaClicada);
+			card17 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard17 = categoriaCarta;
+		} else if (card18 == 0) {
+			card18name.textContent = cartas.alt;
+			card18name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card18name.appendChild(cartaClicada);
+			card18 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard18 = categoriaCarta;
+		} else if (card19 == 0) {
+			card19name.textContent = cartas.alt;
+			card19name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card19name.appendChild(cartaClicada);
+			card19 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard19 = categoriaCarta;
+		} else if (card20 == 0) {
+			card20name.textContent = cartas.alt;
+			card20name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card20name.appendChild(cartaClicada);
+			card20 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard20 = categoriaCarta;
+		} else if (card21 == 0) {
+			card21name.textContent = cartas.alt;
+			card21name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card21name.appendChild(cartaClicada);
+			card21 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard21 = categoriaCarta;
+		} else if (card22 == 0) {
+			card22name.textContent = cartas.alt;
+			card22name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card22name.appendChild(cartaClicada);
+			card22 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard22 = categoriaCarta;
+		} else if (card23 == 0) {
+			card23name.textContent = cartas.alt;
+			card23name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card23name.appendChild(cartaClicada);
+			card23 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard23 = categoriaCarta;
+		} else if (card24 == 0) {
+			card24name.textContent = cartas.alt;
+			card24name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card24name.appendChild(cartaClicada);
+			card24 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard24 = categoriaCarta;
+		} else if (card25 == 0) {
+			card25name.textContent = cartas.alt;
+			card25name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card25name.appendChild(cartaClicada);
+			card25 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard25 = categoriaCarta;
+		} else if (card26 == 0) {
+			card26name.textContent = cartas.alt;
+			card26name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card26name.appendChild(cartaClicada);
+			card26 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard26 = categoriaCarta;
+		} else if (card27 == 0) {
+			card27name.textContent = cartas.alt;
+			card27name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card27name.appendChild(cartaClicada);
+			card27 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard27 = categoriaCarta;
+		} else if (card28 == 0) {
+			card28name.textContent = cartas.alt;
+			card28name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card28name.appendChild(cartaClicada);
+			card28 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard28 = categoriaCarta;
+		} else if (card29 == 0) {
+			card29name.textContent = cartas.alt;
+			card29name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card29name.appendChild(cartaClicada);
+			card29 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard29 = categoriaCarta;
+		} else if (card30 == 0) {
+			card30name.textContent = cartas.alt;
+			card30name.appendChild(document.createElement("br")); // Adicione uma quebra de linha
+			card30name.appendChild(cartaClicada);
+			card30 = 1;
+			cartasAdicionadas.push(cartas.alt);
+			valor += parseInt(categoriaCarta);
+			contador.textContent = valor;
+			codcard30 = categoriaCarta;
+		}
+	}
+	
 	// Função para remover uma imagem do array imagensAdicionadas
 	function removeImagemAdicionada(nomeImagem) {
-    const index = imagensAdicionadas.indexOf(nomeImagem);
-    if (index !== -1) {
-        imagensAdicionadas.splice(index, 1);
-    }
-}
+		const index = imagensAdicionadas.indexOf(nomeImagem);
+		if (index !== -1) {
+			imagensAdicionadas.splice(index, 1);
+		}
+	}
+	
+	// Função para remover uma carta do array cartasAdicionadas
+	function removeCartaAdicionada(nomeCarta) {
+		const index = cartasAdicionadas.indexOf(nomeCarta);
+		if (index !== -1) {
+			cartasAdicionadas.splice(index, 1);
+		}
+	}
 
-    // Obtém as referências para as imagens e o contador
-    var imagens = document.querySelectorAll(".imagem");
+    // Obtém as referências para as imagens, cards e o contador de Valor
+    var cartas = document.querySelectorAll(".cartas"); 
+	var imagens = document.querySelectorAll(".imagem");
     var contador = document.getElementById("contador");
     var char1name = document.getElementById("char1");
     var char2name = document.getElementById("char2");
@@ -446,6 +757,10 @@
 
     // Inicializa a lista para validar as cartas usadas;
 	var imagensAdicionadas = [];
+	
+	// Inicializa as variaves para contagem do deck;
+	var contadordeck = 0;
+	var cartasAdicionadas = [];
 
     // Inicializa o valor do contador
     var valor = 0;
@@ -457,13 +772,82 @@
 	var codchar1 = 0;
     var codchar2 = 0;
     var codchar3 = 0;
-
+	
+	// Inicializa as variáveis para definir cartas do deck
+	var card01 = 0;
+	var card02 = 0;
+	var card03 = 0;
+	var card04 = 0;
+	var card05 = 0;
+	var card06 = 0;
+	var card07 = 0;
+	var card08 = 0;
+	var card09 = 0;
+	var card10 = 0;
+	var card11 = 0;
+	var card12 = 0;
+	var card13 = 0;
+	var card14 = 0;
+	var card15 = 0;
+	var card16 = 0;
+	var card17 = 0;
+	var card18 = 0;
+	var card19 = 0;
+	var card20 = 0;
+	var card21 = 0;
+	var card22 = 0;
+	var card23 = 0;
+	var card24 = 0;
+	var card25 = 0;
+	var card26 = 0;
+	var card27 = 0;
+	var card28 = 0;
+	var card29 = 0;
+	var card30 = 0;
+	var codcard01 = 0;
+	var codcard02 = 0;
+	var codcard03 = 0;
+	var codcard04 = 0;
+	var codcard05 = 0;
+	var codcard06 = 0;
+	var codcard07 = 0;
+	var codcard08 = 0;
+	var codcard09 = 0;
+	var codcard10 = 0;
+	var codcard11 = 0;
+	var codcard12 = 0;
+	var codcard13 = 0;
+	var codcard14 = 0;
+	var codcard15 = 0;
+	var codcard16 = 0;
+	var codcard17 = 0;
+	var codcard18 = 0;
+	var codcard19 = 0;
+	var codcard20 = 0;
+	var codcard21 = 0;
+	var codcard22 = 0;
+	var codcard23 = 0;
+	var codcard24 = 0;
+	var codcard25 = 0;
+	var codcard26 = 0;
+	var codcard27 = 0;
+	var codcard28 = 0;
+	var codcard29 = 0;
+	var codcard30 = 0;
+        
     // Adiciona ouvintes de eventos de clique às imagens
     imagens.forEach(function (imagem) {
         imagem.addEventListener("click", function () {
             handleCategoria(imagem);
         });
     });
+	
+	// Adiciona ouvintes de eventos de clique às cartas
+	cartas.forEach(function (cartas) {
+		cartas.addEventListener("click", function () {
+			handleCardsCategoria(cartas);
+		});
+	});
 
 	
 	// Adicione um ouvinte de evento de clique para char1
@@ -504,6 +888,8 @@
 		//appendChild(imagemClicada);
 		;
 	});
+	
+	
 		
     </script>
 </body>
